@@ -18,7 +18,7 @@
 {
     [super viewDidLoad];
     TWAClient *client = [[TWAClient alloc] initWithAPIKey: @"sOK3xgGkv3ooeK4J9P5yKINSs8vSgWEMSeLp6TLUkT6iX7B5hraqLDEZ1sBpln3O"];
-    TWAPaginationOptions *paginationOptions = [TWAPaginationOptions defaultPaginationOptions];
+    TWARequestOptions *paginationOptions = [TWARequestOptions defaultPaginationOptions];
     [client getObjectsWithPaginationOptions: paginationOptions
                                     success: ^(NSArray* objectList) {
                                         NSLog(@"I win");
