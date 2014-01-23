@@ -1,0 +1,14 @@
+PODS:
+  - WaltersAPI (0.0.1)
+
+DEPENDENCIES:
+  - WaltersAPI (from `/Users/nerded/Development/backforty/WaltersAPI`)
+
+EXTERNAL SOURCES:
+  WaltersAPI:
+    :path: /Users/nerded/Development/backforty/WaltersAPI
+
+SPEC CHECKSUMS:
+  WaltersAPI: d53143db5c5bfdca25788e51fc52282adeba2d32
+
+COCOAPODS: 0.29.0
