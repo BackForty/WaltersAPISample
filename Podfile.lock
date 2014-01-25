@@ -2,11 +2,11 @@ PODS:
   - WaltersAPI (0.0.1)
 
 DEPENDENCIES:
-  - WaltersAPI (from `/Users/nerded/Development/backforty/WaltersAPI`)
+  - WaltersAPI (from `git@github.com:BackForty/WaltersAPI.git`)
 
 EXTERNAL SOURCES:
   WaltersAPI:
-    :path: /Users/nerded/Development/backforty/WaltersAPI
+    :git: git@github.com:BackForty/WaltersAPI.git
 
 SPEC CHECKSUMS:
   WaltersAPI: d53143db5c5bfdca25788e51fc52282adeba2d32
