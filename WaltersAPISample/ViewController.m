@@ -17,20 +17,23 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    TWAClient *client = [[TWAClient alloc] initWithAPIKey: @"sOK3xgGkv3ooeK4J9P5yKINSs8vSgWEMSeLp6TLUkT6iX7B5hraqLDEZ1sBpln3O"];
+    
+    //NSString *myAPIKey = @"";
+    
+    TWAClient *client = [[TWAClient alloc] initWithAPIKey: myAPIKey];
     TWARequestOptions *requestOptions = [[TWARequestOptions alloc] init];
     
     [client getObjectsWithRequestOptions: requestOptions
                                     success: ^(NSArray* objectList) {
-                                        NSLog(@"I win");
+                                        // This is where you'd operate on the returned object list
                                     } fail: ^(NSURLResponse *response, NSError *error) {
-                                        NSLog(@"I lose");
+                                        // This is where you'd handle any error in getting the objects
                                     }];
     
     [client getObjectByID: @"2" onSuccess:^(id item) {
-        NSLog(@"Second win");
+        // this is where you'd operate on the returned object
     } fail:^(NSURLResponse *response, NSError *error) {
-        NSLog(@"Second fail");
+        // this is where you'd handle any error in getting the objects
     }];
 }
 
